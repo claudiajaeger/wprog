@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Claudia Jäger</title>
+    <meta name="author" content="Claudia Jäger">
+    <meta name="descriptions" content="A Site About Me">
+    <meta name="generator" content="Microsoft Visual Studio 1.52.1">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <meta name="robots" content="nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2/Styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet"> 
+</head>
+<body>  
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="now.html">Now</a></li>
+                <li class="active">Future</li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section>
+                <h1>Framtida aktiviteter</h1>
+                <article>
+                    <h3 class="underline">Inblick</h3>
+                    <blockquote>
+                        <dl>
+                            <dt class="underline">Två bra citat är följande:</dt>
+                            <dd>It does not do to dwell on dreams and forget to live.</dd>
+                        </dl>
+                        <pre><i>
+                            I may not have gone where 
+                            I intended to go, 
+                            but I think I have 
+                            ended up where I 
+                            needed to be.
+                        </i></pre>
+                    </blockquote>
+                </article>
+                <article>
+                    <h4>Skill Progress</h4>
+                    <figure>
+                        <img src="Bilder/butterfly.png" alt="butterfly" width="200" height="300"/>
+                        <figcaption>Här ovan har vi en bild med icke-förstörande kompression i PNG-format.</figcaption>
+                    </figure>
+                    <table>
+                        <caption><b>Nedan följer hur länge jag studerat något (för framtida referens):</b></caption>
+                        <thead>
+                            <tr>
+                                <th colspan="2"></th>
+                                <th>Percentage</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th rowspan="4">Skills:</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>HTML</th>
+                                <td>46%</td>
+                                <td>1 year</td>
+                            </tr>
+                            <tr>
+                                <th>CSS</th>
+                                <td>33%</td>
+                                <td>3 months</td>
+                            </tr>
+                            <tr>
+                                <th>Adobe Illustrator</th>
+                                <td>76%</td>
+                                <td>2 years</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Time spent in total:</th>
+                                <th>(All skills)</th>
+                                <td></td>
+                                <td>3 years, 3 months</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </article>
+            </section>
+            <aside>
+                <h3>Skicka snigelmail?</h3>
+                <p>
+                    Claudia Jäger<br/>
+                    27 Redchurch Street<br/>
+                    Shoreditch, London E2 7DP
+                </p>
+            </aside>
+            <aside>
+                <h3>Framtidstips!</h3>
+                <p><b>UX Collective</b> är ett community där man tillsammans kan läsa på om det senaste inom UX men också dela med sig av tankar och idéer kring olika ämnen.</p>
+                <details>
+                    <summary>Du hittar länken nedan: </summary>
+                    <a href="https://uxdesign.cc/">UX Collective</a>
+                </details>
+            </aside>
+            <article>
+                <h2 class="formText">Formulär</h2>
+                <fieldset>
+                    <legend>Kontakta mig nedan</legend>
+                    <form enctype="multipart/form-data" action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php" method="post">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" maxlength="32" pattern="[A-Za-z ]{1,32}" title="Invalid name!" placeholder="First and last name" autofocus/>
+                        <br/>
+                        <label for="occupation-choice">Choose occupation: </label>
+                        <input list="occupation" id="occupation-choice" name="occupation-choice" placeholder="Double-click me"/>
+                        <datalist id="occupation">
+                            <option value="Student">
+                            <option value="Professor">
+                            <option value="Employer">
+                        </datalist>
+                        <br/>
+                        <label for="email">E-mail: </label>
+                        <input type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid e-mail!" id="email" placeholder="Enter your e-mail" required/>
+                        <br/>
+                        <label for="web">Website: </label>
+                        <input type="url" id="web" placeholder="Enter your website"/>
+                        <br/>
+                        <label for="reply">Do you want a reply?</label>
+                        <input type="checkbox" id="reply"/>
+                        <label for="reply">Yes</label>
+                        <br/>
+                        <label>I want a copy of sent e-mail</label>
+                        <input type="radio" name="option1"/>
+                        <label>Yes</label>
+                        <input type="radio" name="option1"/>
+                        <label>No</label>
+                        <br/>
+                        <label for="category">Category: </label>
+                        <select id="category">
+                            <option value="business" selected>Business enquires</option>
+                            <option value="portfolio">Portfolio related</option>
+                            <option value="university">University related</option>
+                            <option value="general">General question</option>
+                        </select>
+                        <br/>
+                        <label for="file">Upload file</label>
+                        <input type="file" name="file" id="file"/>
+                        <br/>
+                        <label for="message">Message: </label><br/>
+                        <textarea id="message">Write your message here...</textarea>
+                        <br/>
+                        <input type="submit" value="Submit"/>
+                    </form>
+                </fieldset>
+            </article>
+    
+        </main>
+    
+        <footer>
+                <h4>Copyright Claudia Jäger</h4>
+                <p>Email me at <a href="mailto:claudia.jager@outlook.com">claudia.jager@outlook.com</a></p>
+        </footer>
+</body>
+</html>
